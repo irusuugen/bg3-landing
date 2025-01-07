@@ -4,8 +4,24 @@ body {
     cursor: url("http://www.rw-designer.com/cursor-extern.php?id=201976"), auto;
 }
 
+h1 {
+    font-family: Alegreya;
+    color: #f0bb7b;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    font-family: "Gothic A1";
+    text-align: justify;
+}
+
 a:hover{
     cursor: url("http://www.rw-designer.com/cursor-extern.php?id=201977"), auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 @font-face {
@@ -13,12 +29,17 @@ a:hover{
     src: url("./fonts/Alegreya-VariableFont_wght.ttf");
   }
 
+@font-face {
+    font-family: "Gothic A1";
+    src: url("./fonts/Gothic_A1/GothicA1-Regular.ttf");
+}
+
 .whole-page {
     height: 100%;
 }
 
 .header {
-    background-color: black;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgb(0, 0, 0));
     padding: 10px 15px;
     position: fixed;
     top: 0;
@@ -26,8 +47,8 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
-    height: 15vh;
+    min-width: 100vw;
+    height: 12vh;
 }
 
 ul {
@@ -35,9 +56,11 @@ ul {
     display: flex;
     gap: 20px;
     font-size: 25px;
-    padding-right: 25px;
+    padding-right: 40px;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: -20px;
+    position: relative;
 }
 
 a.buy {
@@ -52,8 +75,7 @@ a.buy {
 }
 
 .nav-links a:hover {
-    filter: brightness(1.2);
-    transition: 0.8s ease;
+    filter: brightness(1.1);
 }
 
 a {
@@ -62,8 +84,96 @@ a {
 }
 
 .intro {
-    background-color: aquamarine;
-    height: 100vh;
-    margin-top: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
 }
 
+video {
+    position: absolute;
+    z-index: -100;
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.intro-box {
+    color: #bebebe;
+    background-color: #00000080;
+    border: 3px solid #f0bb7b;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    min-width: 70%;
+    max-width: 70%;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: -1;
+    margin-top: 4vh;
+    padding: 3%;
+}
+
+.intro-left {
+    max-width: 50%;
+}
+
+.join {
+    width: 230px;
+    z-index: 1;
+}
+.join:hover{
+    width: 235px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.intro-right {
+    flex: 1 1 300px;
+}
+
+.bg-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.characters {
+    background-color:black;
+    margin-top: 52vh;
+    padding: 1vh;
+}
+
+.characters img {
+    width: 180px;
+    height: auto;
+}
+
+.characters h1 {
+    background: linear-gradient(to bottom, #e0a45a, #f8ce9b);
+    border: #8f642f 2px solid;
+    border-radius: 40px;
+    color: black;
+    width: 20vh;
+    padding: 5px;
+    margin: 20px auto;
+}
+
+h2 {
+    color:#f0bb7b;
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+}
+
+.characters-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.char {
+    text-align: center;
+}
